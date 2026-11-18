@@ -1,0 +1,90 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  background-color: #111111;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+}
+
+/* Calculator card */
+.grade-calculator {
+  width: 100%;
+  max-width: 350px;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+/* Input */
+.grade-calculator input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+/* Button */
+.grade-calculator button {
+  width: 100%;
+  padding: 12px;
+  background-color: #f97316;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.grade-calculator button:hover {
+  background-color: #ea580c;
+}
+@media (max-width: 400px) {
+  .grade-calculator {
+    width: calc(100% - 30px);
+    padding: 20px;
+  }
+}
+/* Heading */
+.grade-calculator h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+/* Label */
+.grade-calculator label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Input focus */
+.grade-calculator input:focus {
+  outline: 2px solid #f97316;
+}
+
+/* Button hover */
+.grade-calculator button:hover {
+  background-color: #ea580c;
+  transition: background-color 0.3s ease;
+}
+
+/* Result */
+.grade-calculator p {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.5;
+}
